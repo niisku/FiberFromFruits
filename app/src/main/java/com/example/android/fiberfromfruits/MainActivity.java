@@ -7,14 +7,23 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int results_woman = 25;
-    int results_man = 38;
-    int fiber_count = 0;
+    int resultsWoman = 25;
+    int resultsMan = 38;
+    int fiberCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    private void updateScore(int score){
+        fiberCount = fiberCount + score;
+        resultsWoman = resultsWoman - score;
+        resultsMan = resultsMan - score;
+        displayFiber(fiberCount);
+        displayForWomen(resultsWoman);
+        displayForMen(resultsMan);
     }
 
     /**
@@ -45,24 +54,14 @@ public class MainActivity extends AppCompatActivity {
      * Reduces fiber worth of 8 grams (Raspberries).
      */
     public void reduceEight(View view) {
-        fiber_count = fiber_count + 8;
-        results_woman = results_woman - 8;
-        results_man = results_man - 8;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        updateScore(8);
     }
 
     /**
      * Reduces fiber worth of 5 grams (Carrot).
      */
     public void reduceFive(View view) {
-        fiber_count = fiber_count + 5;
-        results_woman = results_woman - 5;
-        results_man = results_man - 5;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        updateScore(5);
     }
 
     /**
@@ -70,47 +69,38 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void reduceFour(View view) {
-        fiber_count = fiber_count + 4;
-        results_woman = results_woman - 4;
-        results_man = results_man - 4;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        //This is updateScore(4), but I leave here as an additional option, show how it was originally
+        fiberCount = fiberCount + 4;
+        resultsWoman = resultsWoman - 4;
+        resultsMan = resultsMan - 4;
+        displayFiber(fiberCount);
+        displayForWomen(resultsWoman);
+        displayForMen(resultsMan);
     }
 
     /**
      * Reduces fiber worth of 3 grams (Banana, grapefruit, orange).
      */
     public void reduceThree(View view) {
-        fiber_count = fiber_count + 3;
-        results_woman = results_woman - 3;
-        results_man = results_man - 3;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        updateScore(3);
     }
 
     /**
      * Reduces fiber worth of 1 gram (Raisins, orange).
      */
     public void reduceOne(View view) {
-        fiber_count = fiber_count + 1;
-        results_woman = results_woman - 1;
-        results_man = results_man - 1;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        updateScore(1);
     }
 
     /**
      * Resets all values.
      */
     public void resetAll(View view) {
-        results_woman = 25;
-        results_man = 38;
-        fiber_count = 0;
-        displayFiber(fiber_count);
-        displayForWomen(results_woman);
-        displayForMen(results_man);
+        resultsWoman = 25;
+        resultsMan = 38;
+        fiberCount = 0;
+        displayFiber(fiberCount);
+        displayForWomen(resultsWoman);
+        displayForMen(resultsMan);
     }
 }
