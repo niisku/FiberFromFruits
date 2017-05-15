@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Fiber From Fruits</string>
+    <string name="woman">Woman</string>
+    <string name="man">Man</string>
+    <string name="woman_scores">25</string>
+    <string name="fibers_needed">grams of fibers needed</string>
+    <string name="man_scores">38</string>
+    <string name="fibers_taken">Fibers taken</string>
+    <string name="fiber_count">0</string>
+    <string name="banana">Banana \n1 medium</string>
+    <string name="apple">Apple \n1 medium</string>
+    <string name="raspberries">Raspberries \n1 cup</string>
+    <string name="blueberries">Blueberries \n1 cup</string>
+    <string name="grapefruit">Grapefruit \n1 medium</string>
+    <string name="raisins">Raisins \n60 pcs</string>
+    <string name="strawberries">Strawberries \n1 cup</string>
+    <string name="orange">Orange \n1 medium</string>
+    <string name="carrots">Carrots \n1 cup</string>
+
+</resources>

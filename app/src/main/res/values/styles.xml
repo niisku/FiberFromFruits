@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorPrimaryDark">@color/darkGreen</item>
+        <item name="colorButtonNormal">@color/darkGreen</item>
+    </style>
+
+    <style name="fruit_information">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/buttonTextGreen</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="fruit_buttons">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="description_text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="scores">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/backgroundButtons</item>
+    </style>
+
+</resources>

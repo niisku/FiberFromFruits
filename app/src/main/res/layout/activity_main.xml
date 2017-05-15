@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.fiberfromfruits.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@color/backgroundLightGreen"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_woman"
+                style="@style/description_text"
+                android:text="@string/woman"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_woman"
+                style="@style/scores"
+                android:text="@string/woman_scores" />
+
+            <TextView
+                android:id="@+id/results_woman"
+                style="@style/description_text"
+                android:text="@string/fibers_needed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_fibersCount"
+                style="@style/description_text"
+                android:text="@string/fibers_taken"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fiber_count"
+                style="@style/scores"
+                android:text="@string/fiber_count" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_man"
+                style="@style/description_text"
+                android:text="@string/man"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_man"
+                style="@style/scores"
+                android:text="@string/man_scores" />
+
+            <TextView
+                android:id="@+id/results_man"
+                style="@style/description_text"
+                android:text="@string/fibers_needed" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_banana"
+                style="@style/fruit_buttons"
+                android:background="@drawable/banana"
+                android:onClick="reduceThree" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/banana" />
+
+            <Button
+                android:id="@+id/button_apple"
+                style="@style/fruit_buttons"
+                android:background="@drawable/apple"
+                android:onClick="reduceFour" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/apple" />
+
+            <Button
+                android:id="@+id/button_raspberries"
+                style="@style/fruit_buttons"
+                android:background="@drawable/raspberries"
+                android:onClick="reduceEight" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/raspberries" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_blueberries"
+                style="@style/fruit_buttons"
+                android:background="@drawable/blueberries"
+                android:onClick="reduceFour" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/blueberries" />
+
+            <Button
+                android:id="@+id/button_grapefruit"
+                style="@style/fruit_buttons"
+                android:background="@drawable/grapefruit"
+                android:onClick="reduceThree" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/grapefruit" />
+
+            <Button
+                android:id="@+id/button_raisins"
+                style="@style/fruit_buttons"
+                android:background="@drawable/raisins"
+                android:onClick="reduceOne" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/raisins" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_strawberries"
+                style="@style/fruit_buttons"
+                android:background="@drawable/strawberries"
+                android:onClick="reduceFour" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/strawberries" />
+
+            <Button
+                android:id="@+id/button_orange"
+                style="@style/fruit_buttons"
+                android:background="@drawable/orange"
+                android:onClick="reduceThree" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/orange" />
+
+            <Button
+                android:id="@+id/button_carrot"
+                style="@style/fruit_buttons"
+                android:background="@drawable/carrots"
+                android:onClick="reduceFive" />
+
+            <TextView
+                style="@style/fruit_information"
+                android:text="@string/carrots" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="resetAll"
+        android:text="Reset" />
+
+</LinearLayout>
